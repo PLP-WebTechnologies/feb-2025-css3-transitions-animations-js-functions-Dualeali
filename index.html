@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Animations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="animated-header">
+            <h1>User Preferences Dashboard</h1>
+            <div class="theme-switcher">
+                <span>Dark Mode</span>
+                <div class="toggle-btn">
+                    <input type="checkbox" id="theme-toggle">
+                    <label for="theme-toggle" class="toggle-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="animation-demo">
+                <h2>Interactive Elements</h2>
+                <div class="button-group">
+                    <button class="btn pulse">Pulse Effect</button>
+                    <button class="btn bounce">Bounce Effect</button>
+                    <button class="btn rotate">Rotate Effect</button>
+                </div>
+
+                <div class="card-container">
+                    <div class="card" data-item="1">
+                        <div class="card-header">
+                            <h3>Web Development</h3>
+                            <button class="fav-btn" aria-label="Add to favorites">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <p>Learn advanced CSS animations and JavaScript techniques.</p>
+                    </div>
+                    <div class="card" data-item="2">
+                        <div class="card-header">
+                            <h3>UI/UX Design</h3>
+                            <button class="fav-btn" aria-label="Add to favorites">
+                                <i class="far fa-star"></i>
+                            </button>
+                        </div>
+                        <p>Create beautiful user interfaces with smooth transitions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="preferences-section">
+                <h2>Your Preferences</h2>
+                <div class="preferences-display">
+                    <p>Selected Theme: <span id="theme-display">Light</span></p>
+                    <p>Favorite Items: <span id="favorites-display">None</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
